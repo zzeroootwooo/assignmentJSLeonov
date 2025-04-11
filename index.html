@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Knowledge Challenge</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="game-screen welcome-section active">
+
+    <h1>Quiz Challenge</h1>
+    <div class="config-row">
+      <label for="player-count">Players Count:</label>
+      <select class="player-count-select">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+    </div>
+
+    <div class="config-row">
+      <label for="category-select">Choose Category:</label>
+      <select class="category-select">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="js">JavaScript</option>
+        <option value="mixed">Mixed</option>
+      </select>
+      <label for="question-amount">Questions Amount:</label>
+      <select class="question-amount-select">
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+    <button class="proceed-btn">Continue</button>
+  </div>
+
+  <div class="game-screen name-entry-section hidden">
+    <h2>Player Names</h2>
+    <div class="name-inputs-container"></div>
+    <button class="return-btn">Go Back</button>
+    <button class="start-game-btn">Start Game</button>
+  </div>
+  <div class="game-screen countdown-section hidden">
+    <h2>Prepare Yourself!</h2>
+    <p>Starting in:</p>
+    <span class="countdown-display">5</span>
+  </div>
+  <div class="game-screen question-section hidden">
+    <h2 class="player-header">
+      <span class="active-player-name">Player 1</span>'s Turn
+    </h2>
+    <p class="question-display">Question will appear here</p>
+    <div class="answer-options"></div>
+    <p class="timer-display">
+      Remaining time: <span class="seconds-remaining">10</span> sec
+    </p>
+    <button class="answer-confirm-btn">Confirm Answer</button>
+  </div>
+  <div class="game-screen results-section hidden">
+    <h2>Challenge Complete</h2>
+    <p class="results-display"></p>
+    <button class="new-game-btn">New Challenge</button>
+    <button class="show-details-btn">Show Answer Details</button>
+  </div>
+  <div class="game-screen details-section hidden">
+    <h2>Answer Details</h2>
+    <div class="answers-summary"></div>
+    <button class="back-to-results-btn">Return to Results</button>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
