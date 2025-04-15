@@ -173,12 +173,6 @@ function initializeQuizGame() {
     function createJSQuestions() {
         return [
             {
-                question: "What will be logged to the console?",
-                image: "hminteresting.jpg",
-                answers: ["2015", "2016", "2017", "2018"],
-                correct: 1,
-            },
-            {
                 question: "Loops are the part of the program that...",
                 answers: ["Repeats", "Remembers", "Chooses", "Varies"],
                 correct: 0,
